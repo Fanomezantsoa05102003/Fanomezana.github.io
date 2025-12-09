@@ -1,0 +1,177 @@
+@font-face{
+    font-family: poppins;
+    src: url(Poppins-Medium.ttf);
+}
+*{
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    margin:0;
+    padding:0;
+    width:100%;
+    overflow-x: hidden;%;
+    }
+body{
+    background: #1F242D;
+    color: #fff;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    padding:0;
+    width:100%;
+    overflow-x: hidden;
+    
+}
+.container{
+    max-width: 1000px;
+    margin: (50px auto);
+    background-color: #1F242D;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.5);
+    padding: 30px;
+}
+h1{
+    font-size: 2.5rem;
+    color: #7CF23D;
+    text-align: center;
+    margin-bottom: 20px;
+}
+section{
+    margin: 20px 0;
+    padding: 20px;
+    border-left: 5px solid #7CF23D;
+    background: #2A2F39;
+    border-radius: 8px;
+}
+section h2{
+    font-size: 1.8rem;
+    color: #7CF23D;
+    margin-bottom: 10px;
+}
+section p{
+    font-size: 15px;
+}
+.lien{
+    display: flex;
+    gap: 30px;
+}
+a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #7CF23D;
+    border: 2px solid #7CF23D;
+    box-shadow: 0 0 10px #7CF23D;
+    border-radius: 40px;
+    color: #000;
+    font-weight: bold;
+    transition: .7s;
+    font-size: 13px;
+    text-decoration: 0;
+}
+a:hover{
+    background: transparent;
+    color: #7CF23D;
+    box-shadow: none;
+}
+/*.left .skill-txt{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}*/
+.left .skill-txt{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.left .skill-txt .competence{
+    width: 100%;
+    padding:10px;
+}
+.left .skill-txt .competence li{
+    margin: 10px 0;
+    padding: 10px;
+}
+.bar1{
+    background: #353b48;
+    display: block;
+    height: 10px;
+    border: 1px solid rgba(0, 0, 0,.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(124, 242, 61, 0.1), 0 1px 2px rgba(124, 242, 61, 0.219);
+}
+.bar1 span {
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg,#7CF23D,#aaf581)
+}
+.html{
+    width: 90%;
+    animation: html 3s;
+}
+.css{
+    width: 70%;
+    animation: css 3s;
+}
+.javascript{
+    width: 55%;
+    animation: javascript 3s;
+}
+.reactJs{
+    width: 45%;
+    animation: reactjs 3s;
+}
+
+@keyframes html {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes javascript {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 55%;
+    }
+}
+@keyframes reactjs {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 45%;
+    }
+}
+.left .skill-txt .competence h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: .2px #7CF23D;
+}
+.left .skill-txt .competence h3{
+    margin: 3px;
+}
+/*Fa_css*/
+span{
+    color: #7CF23D;
+}

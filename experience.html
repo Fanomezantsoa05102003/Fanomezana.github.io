@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A propos de moi</title>
+    <link rel="stylesheet" href="about.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Mes expériences professionnelles</h1>
+
+      <section class="left">
+        <h2>Stage de Développement Web Full-Stack | 4 mois</h2>
+        <p>
+          Participation au développement d'une <span>application web</span> de sensibilisation en utilisant Angular pour le front-end et PHP pour le back-end. Cette expérience m'a permis de renforcer mes compétences techniques en développement d'interfaces utilisateur réactives et en intégration d'API REST. J'ai également développé ma capacité à travailler en équipe dans un environnement collaboratif, en maîtrisant l'utilisation de Git et GitHub pour le versioning et la gestion de code source, incluant la création de branches, les pull requests et la résolution de conflits.
+        </p>
+      </section>
+
+      <section class="right">
+        <h2>
+Projet - Plateforme de Collecte de Données pour le MESUPRES | 2025 </h2>
+        <p>
+         Développement d'une plateforme web complète de collecte et de gestion de données étudiantes en collaboration avec le Ministère de l'Enseignement Supérieur et de la Recherche Scientifique de Madagascar (MESUPRES). Conception de l'architecture de la solution et implémentation full-stack en utilisant HTML pour l'interface utilisateur et PHP pour le traitement back-end et la gestion de base de données. Cette plateforme permet la centralisation, le stockage sécurisé et la gestion efficace des informations académiques et administratives des étudiants à l'échelle nationale. Le projet a notamment facilité la collecte standardisée des données, amélioré l'accessibilité de l'information pour les différentes institutions d'enseignement supérieur, et contribué à la modernisation du système d'information du ministère. Cette expérience m'a permis de développer mes compétences en gestion de projet, en analyse des besoins utilisateurs, et en développement d'applications web répondant aux exigences d'organismes gouvernementaux.
+        </p>
+      </section>
+
+     
+      <section class="right">
+        <h2>Projet - Enquête de Sensibilisation | Association FID | 2024 </h2>
+        <p>
+        Participation à un projet d'enquête de sensibilisation mené par l'association FID. Contribution à la collecte de données sur le terrain, à l'analyse des résultats et à la rédaction de rapports de sensibilisation. Cette expérience m'a permis de développer mes compétences en communication, en méthodologie d'enquête et en travail associatif.
+
+        </p>
+      </section>
+
+      <div class="lien">
+        <a href="index.html" class="boutton">Retour à l'accueil</a>
+      </div>
+    </div>
+    <script>
+      ScrollReveal({
+        distance: "50px",
+        duration: 2500,
+        delay: 400,
+        opacity: 0,
+        reset: true,
+      });
+      ScrollReveal().reveal(".right", { delay: 300, origin: "left" });
+
+      ScrollReveal().reveal(".left", { delay: 300, origin: "right" });
+    </script>
+  </body>
+</html>
